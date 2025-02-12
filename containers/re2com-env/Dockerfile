@@ -75,7 +75,7 @@ RUN java --version && javac --version
 
 
 
-RUN ln -sf $(which python$PYTHON_VERSION) /usr/bin/python
+WORKDIR /
 
 RUN python -m pip install --upgrade pip \
     && python -m venv --system-site-packages /opt/python/venv/base
