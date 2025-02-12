@@ -1,0 +1,4 @@
+nltk
+protobuf==3.19.6
+tensorflow==1.15.0
+pyyaml>=5.1
