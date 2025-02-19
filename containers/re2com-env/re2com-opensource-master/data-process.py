@@ -63,7 +63,7 @@ def main():
 	symlink(get_vocab('code'), get_vocab('exemplar_code'))
 
 	# challenge
-	ext_conv2 = {'ast': 'code', 'nl': 'nl'}
+	"""ext_conv2 = {'ast': 'code', 'nl': 'nl'}
 	for dir_name in dir2file:
 		os.makedirs(os.path.join(challenge, dir_name), exist_ok=True)
 		for old_ext, new_ext in ext_conv2.items():
@@ -73,7 +73,7 @@ def main():
 		symlink(get_vocab(old_ext, root=standard),
 		           get_vocab(new_ext, root=challenge))
 	symlink(get_vocab('nl', root=challenge), get_vocab('exemplar', root=challenge))
-	symlink(get_vocab('code', root=challenge), get_vocab('exemplar_code', root=challenge))
+	symlink(get_vocab('code', root=challenge), get_vocab('exemplar_code', root=challenge))"""
 
 if __name__ == '__main__':
 	main()
