@@ -18,7 +18,7 @@ def main():
 	assert os.path.isdir(args.icse_dir)
 	assert os.path.isfile(os.path.join(icse_dir, 'smls.test'))
 
-	dir2file = {'train': 'train', 'val': 'valid', 'test': 'test'}
+	dir2file = {'train': 'train', 'val': 'test', 'test': 'test'}
 	ext_conv = {'smls': 'ast', 'dats': 'code', 'coms': 'nl'}
 	def old_path(ori_ext, dir_name):
 		return os.path.join(icse_dir, '.'.join([ori_ext, dir_name]))
