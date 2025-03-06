@@ -1,6 +1,5 @@
 def build_words(stem: str, prefix: list):
 	d = dict()
-	print(stem)
 	for p in prefix:
 		print(p)
 		def add_word(no, word):
@@ -8,7 +7,6 @@ def build_words(stem: str, prefix: list):
 				d[no] = dict()
 			d[no][p] = word
 		for line in open(stem+p):
-			print(stem+p)
 			#no, word = line.strip().split(maxsplit=1)
 			no, word = line.split(maxsplit=1)
 			add_word(no, word)
