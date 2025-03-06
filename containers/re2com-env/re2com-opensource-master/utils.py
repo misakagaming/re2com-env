@@ -8,8 +8,11 @@ def build_words(stem: str, prefix: list):
 				d[no] = dict()
 			d[no][p] = word
 		for line in open(stem+p):
+			print(stem+p)
 			#no, word = line.strip().split(maxsplit=1)
 			no, word = line.split(maxsplit=1)
+			print(no)
+			print(word)
 			add_word(no, word)
 	return d
 

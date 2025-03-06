@@ -36,10 +36,11 @@ def main():
 	for dir_name in dir2file:
 		os.makedirs(os.path.join(standard, dir_name), exist_ok=True)
 		for ori_ext, new_ext in ext_conv.items():
+			print(old_path(ori_ext, dir_name))
+			print(new_path(new_ext, dir_name))
 			os.rename(old_path(ori_ext, dir_name), new_path(new_ext, dir_name))
 	# align
 	def build_write_aligned(dir_name):
-		print(dir_name)
 		stem = new_dir(dir_name) + '.'
 		postfix = list(ext_conv.values())
 		sentences = list(utils.build_words(stem, postfix).values())
