@@ -44,6 +44,8 @@ def main():
 		stem = new_dir(dir_name) + '.'
 		postfix = list(ext_conv.values())
 		sentences = list(utils.build_words(stem, postfix).values())
+		print(sentences)
+		print(sentences[0].keys())
 		for sentence3 in sentences:
 			sentence3['nl'] = utils.remove_bos_eos(sentence3['nl'])
 		utils.write_into(sentences, stem, postfix)
