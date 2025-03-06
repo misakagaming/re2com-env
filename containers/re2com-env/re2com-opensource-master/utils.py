@@ -1,6 +1,8 @@
 def build_words(stem: str, prefix: list):
 	d = dict()
+    print(stem)
 	for p in prefix:
+        print(p)
 		def add_word(no, word):
 			if no not in d:
 				d[no] = dict()
